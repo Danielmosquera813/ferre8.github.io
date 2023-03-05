@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ferre 8</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icono.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    #inicio{
+      height: 550px;
+    }
+    #servicios{
+      background-image: url('./assets/img/carrusel/img2.jpg');
+      background-size:cover;
+      background-attachment: fixed;
+    }
+    #porque_elegirnos .section-title h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: red;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+    }
+    .card-reasons .icon{
+      text-align: center;
+      padding: 5px;
+      font-size: 50px;
+      color: red;
+    }
+    .card-reasons .card{
+      border: 1px solid red;
+    }
+    .count-box i img{
+      width: 35px;
+      height: 38px;
+    }
+    .tab-nosotros .nav-link{
+      color: black;
+    }
+    .tab-nosotros .nav-link.active{
+      background-color:red;
+      color: white;
+    }
+    .tab-nosotros .active{
+      background-color: #212121;
+      color: white;
+    }
+
+    .three-dimensions-card {
+    position: relative;
+}
+
+/* The left side */
+.three-dimensions-card::before {
+    background:rgba(0, 0, 0, 0.8);
+    content: '';
+
+    /* Position */
+    top: var(--three-dimensions-card-left-side-width);
+    left: 0px;
+    position: absolute;
+    transform: translate(-100%, 0) skewY(-45deg);
+    transform-origin: left top;
+
+    /* Size */
+    height: 100%;
+    width: var(--three-dimensions-card-left-side-width);
+}
+
+/* The bottom side */
+.three-dimensions-card::after {
+    background: rgba(0, 0, 0, 0.8);
+    content: '';
+
+    /* Position */
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    transform: translate(0, 100%) skewX(-45deg);
+    transform-origin: left top;
+
+    /* Size */
+    height: var(--three-dimensions-card-left-side-width);
+    width: 100%;
+}
+:root {
+    --three-dimensions-card-left-side-width: 1rem;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:ventasbuenaventura@ferre8.com">ventasbuenaventura@ferre8.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+57 317 646 74 46</span></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+57 313 765 84 29</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"><img src="./assets/img/logo.jpeg" alt="logo"> Ferreter&iacute;a Ferre 8</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="">Calculador</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link scrollto " href="#porque_elegirnos">¿Porque elegirnos?</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Home Section ======= -->
+  <section id="inicio" class="d-flex align-items-center">
+    <div data-aos="zoom-out" data-aos-delay="100">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/carrusel/img1.jpg" class="d-block w-100" alt="img1">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carrusel/img2.jpg" class="d-block w-100" alt="img2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carrusel/img3.jpg" class="d-block w-100" alt="img3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section><!-- End Home -->
+
+  <main id="main">
+
+    <!-- ======= Nosotros Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Nosotros</h2>
+          <h3>Conoce mas sobre <span>Nosotros</span></h3>
+        </div>
+
+        <div class="row mb-4 gy-4">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/carousel2/oxana-melis-OqJ_YPwRAXY-unsplash.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/carousel2/oxana-melis-loDPKt_srQ0-unsplash.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/carousel2/mitchell-luo-G5i9LQ7sPOw-unsplash.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col tab-nosotros" data-aos="fade-up" data-aos-delay="100">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Nuestra empresa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Mision</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Vision</button>
+            </li>
+            </ul>
+            <div class="tab-content" id="myTabContent" data-aos="fade-right" data-aos-delay="100">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <p class="fst-italic mt-1 p-3">Cuenta con un area administrativa y un area operativa, estas dos areas son manejadas desde las ciudades de Cali y Buenaventura, cabe decir que es un empresa que esta en en territorio nacional y su funcion principal es la venta de materiales de ferreteria, los despachos son gratuitos y se hacen de manera oportuna y sin contratiempos, cualquier queja la cubrimos con el area de servicio al cliente para garantizar un buen servicio y mejoras en el mismo si se hace necesario.</p>
+
+              <p class="fst-italic p-3">No dude en contactarnos para solicitar una cotización, siempre estaremos encantados de contestar sus preguntas y le prometemos que no quedará decepcionado.</p>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <p class="fst-italic mt-1 p-3">
+                Vender los mejores materiales para la construccion buscando en nuestras comunidades el desarrollo progreso y comprometiendos en llevarlos a donde mas podamos, contando con personal capacitado altamente que permita cubrir con responsabilidad cada una de las exigencias que se nos presenten en cada lugar que lleguemos a brindar nuestros servicios.</p>
+
+              <p class="fst-italic p-3">
+                Presentamos un modelo de negocio enfocado en el servicio al cliente, para crear el compromiso de ser los lideres y mantenernos en el mismo punto atraves de la innovacion y propuestas que incluyan las tecnologias del mundo moderno y asi ampliar la cobertura con calidad.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              <p class="fst-italic mt-1 p-3">Ser los pioneros en presentar un modelo de servicios a nivel de la venta de materiales de construccion y crear el compromiso de lograr la satisfacion de nuestros clientes en al menos un 90% en el comienzo de nuestro negocio y en el mediano plazo a cinco años, lograr al menos el 98% de satisfacion.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="servicios" class="counts">
+      <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Servicios</h2>
+              
+              <p class="fst-italic" style="text-align: justify; background-color: rgba(255, 255, 255, 0.9); padding: 10px;border-radius: 10px;">
+                Nuestro principal servicio es la <strong>venta de materiales y herramientas</strong> enfocados en el area de la <strong>construcci&oacute;n </strong>, por lo cual ofrecemos <strong>productos de calidad</strong> y contamos con un personal altamente calificado en <strong>servicio al cliente</strong>, el cual estar&aacute; atento a brindar una experiencia agradable en todo el proceso de la <strong> compra o cotizaci&oacute;n de nuestros productos</strong>
+              </p>
+            </div>
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="porque_elegirnos" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>¿Porque elegirnos?</h3>
+        </div>
+
+        <div class="row card-reasons">
+
+          <div class="col mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card three-dimensions-card" style="width: 19rem;">
+              <div class="card-body" style="margin-bottom: 70px;">
+                <h3 class="icon"><i class="bx bx-dollar-circle"></i></h3>
+                <ul>
+                  <li>Presupuestos gratuitos.</li>
+                  <li>Amigable, experto y confiable.</li>
+                  <li>Materiales de alta calidad.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card three-dimensions-card" style="width: 19rem;">
+              <div class="card-body" style="margin-bottom: 70px;">
+                <h3 class="icon"><i class="bx bx-package"></i></h3>
+                <ul>
+                  <li>Plazo de entrega r&aacute;pido.</li>
+                  <li>Tarifas razonables.</li>
+                  <li>Confiable y honesto.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card three-dimensions-card" style="width: 19rem;">
+              <div class="card-body">
+                <h3 class="icon"><i class="bi bi-headset"></i></h3>
+                <ul>
+                  <li>Impulsado por la calidad y por el proceso.</li>
+                  <li>Servicio al cliente de primera calidad.</li>
+                  <li>Compa&ntilde;&iacute;a de propiedad local y operada por una familia.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contactanos</h2>
+          <h3><span>Nuestros canales de contacto</span></h3>
+          <p>Si requieres contar con alguno de nuestros servicios o productos, puedes comunicarte con notosotros a traves de los siguientes medios</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Nuestra direcci&oacute;n</h3>
+              <p>CL 6 No. 39 - 52 , Buenaventura - Colombia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Correo electronico</h3>
+              <p>ventasbuenaventura@ferre8.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bi bi-phone"></i>
+              <h3>Celular de contacto</h3>
+              <p>+57 317 646 74 46</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bi bi-phone"></i>
+              <h3>Celular de contacto</h3>
+              <p>+57 313 765 84 29</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63690.59923339814!2d-77.06474742089841!3d3.8823432000000113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3724a16d2cc2c7%3A0x5dbd65d48f2a1dd1!2sCl.%206%20%2339-52%2C%20Buenaventura%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1677798846353!5m2!1ses!2sco" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <img src="./assets/img/logo.jpeg" alt="logo" style="width: 150px;height: 150px;">
+            <h3>Ferreter&iacute;a Ferre 8</h3>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#inicio">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Calculador</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#servicios">Servicios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#porque_elegirnos">¿Porque elegirnos?</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Nuestras redes sociales</h4>
+            <p>Encuentranos y siguenos en nuestras redes sociales.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ferreter&iacute;a ferre 8</span></strong>. Todos los derechos reservados
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
